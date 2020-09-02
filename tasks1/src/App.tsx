@@ -2,6 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+/**
+ * TODO
+ * 1) Create a "Search" component
+ * 2)
+ */
+
 function App() {
   return (
     <div className="App">

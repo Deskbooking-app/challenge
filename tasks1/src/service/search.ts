@@ -8,7 +8,11 @@ type Space = {
   name: string;
 };
 
-
+/**
+ * TODO: 
+ * 1) Fix the API
+ * 2) Extract functions for generating numbers.
+ */
 
 const searchSpaces = (text: string): Promise<Results> => {
   return new Promise((res, rej) => {
