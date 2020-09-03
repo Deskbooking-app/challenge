@@ -28,4 +28,14 @@ const searchSpaces = (text: string): Promise<Results> => {
   });
 };
 
+/**
+ * TODO:
+ * 3) Create a function that delays a promise chain by a provided value.
+ * 4) Write a test for the function you created
+ * Example usage:
+ * searchSpaces("")
+ *  .then(delay(500))
+ *  .then(a => a.spaces)
+ */
+
 export { searchSpaces };
