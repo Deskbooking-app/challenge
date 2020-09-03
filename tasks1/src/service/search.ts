@@ -38,4 +38,9 @@ const searchSpaces = (text: string): Promise<Results> => {
  *  .then(a => a.spaces)
  */
 
+ /**
+  * 5) Invent some reusable way to limit execution of functions like searchSpaces() to an arbitrary value ie. 1000 ms
+  * 6) Invent a "way" to run functions like searchSpaces() with retries on reject.
+  */
+
 export { searchSpaces };
