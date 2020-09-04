@@ -22,6 +22,7 @@
  *  
  * IMPORTANT: Before getting started see timeUtils.ts, so you don't need to rewrite the check "what day of week is 18509".
  * The tasks shouldn't take you more than 1.5-2 hours. If it takes you more, consult us for more precise instructions.
+ * Test might be helpful while developing.
  * 
  * Good luck!
  */
