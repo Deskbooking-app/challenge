@@ -1,4 +1,4 @@
-import range from "lodash/range";
+import { range, random } from "lodash";
 
 type Results = {
   spaces: Space[];
@@ -9,38 +9,39 @@ type Space = {
 };
 
 /**
- * TODO: 
- * 1) Fix the API
+ * TODO:
+ * 1) //Fix the API
  * 2) Extract functions for generating numbers.
  */
 
-const searchSpaces = (text: string): Promise<Results> => {
+const generateSpaces = (text: string) => (from: number, to: number) =>
+  range(from, to).map((index) => ({
+    name: `${text} ${index}`,
+  }));
+
+const ALL_PARKING_SPACES: Space[] = [
+  ...generateSpaces("Kraków HQ")(1, 20),
+  ...generateSpaces("Milano")(21, 50),
+  ...generateSpaces("Munich")(51, 80),
+];
+
+const CHANCE_OF_FAILURE = 0.1;
+const MIN_TIME_MILLIS = 100;
+const MAX_TIME_MILLIS = 1000;
+
+const searchSpaces = (searchText: string): Promise<Results> => {
   return new Promise((res, rej) => {
     setTimeout(() => {
-      const count = Math.round(1 + Math.random() * 3);
-
-      const spaces = range(count).map((index) => ({
-        name: `${text} number ${index}`,
-      }));
-
-      res(spaces);
-    }, Math.round(Math.random() * 1000 * 3));
+      if (random() > CHANCE_OF_FAILURE) {
+        const spaces = ALL_PARKING_SPACES.filter(({ name }) =>
+          name.indexOf(searchText)
+        );
+        res(spaces);
+      } else {
+        rej(new Error("Network error"));
+      }
+    }, random(MIN_TIME_MILLIS, MAX_TIME_MILLIS, false));
   });
 };
-
-/**
- * TODO:
- * 3) Create a function that delays a promise chain by a provided value.
- * 4) Write a test for the function you created
- * Example usage:
- * searchSpaces("")
- *  .then(delay(500))
- *  .then(a => a.spaces)
- */
-
- /**
-  * 5) Invent some reusable way to limit execution of functions like searchSpaces() to an arbitrary value ie. 1000 ms
-  * 6) Invent a "way" to run functions like searchSpaces() with retries on reject.
-  */
 
 export { searchSpaces };

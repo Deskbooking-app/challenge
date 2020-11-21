@@ -1,16 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-/**
- * TODO
- * 1) Create a "Search" component
- * 2) Add a "debounce" for the search component
- * 3) (optionally, otherwise simply display JSON as text) Display the results on a list
- * 4) Assure that the list belongs to most recent query
- * 5) Indicate progress/ loading
- * 6) * Can we make progress/ loading indicator function more generic?
- */
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
