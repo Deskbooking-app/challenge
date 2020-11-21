@@ -15,11 +15,11 @@ We imported some libraries that might be useful when working on tasks provided.
 ## Tasks
 1. A mock api that pretends to be a network call is provided in *src/search.ts*. Typescript linter complains that the file has an error - please fix it. [**Typescript**]
 2. Create a Search component with:
-..1. An input field to provide the search text
-..2. A list below the input field to display the search results. 
-..3. Search results should requested from the API from *task 1* every time the text changes. Please don't bother with styling the search field of list. (IMG) [**React**]
-..1. Network calls duration isn't constant. Make sure that we always display results of the most recently entered text, even if the order of responses is mixed.
-..2. Handle network errors simulated by the API, by display a "something went wrong message".
+  * An input field to provide the search text
+  * A list below the input field to display the search results. 
+  * Search results should requested from the API from *task 1* every time the text changes. Please don't bother with styling the search field of list. (Example layout: ![alt text](https://github.com/Deskbooking-app/challenge/raw/master/search.png) ) [**React**]
+  * Network calls duration isn't constant. Make sure that we always display results of the most recently entered text, even if the order of responses is mixed.
+  * Handle network errors simulated by the API, by display a "something went wrong message".
 3. Create a "delay" function, that can be used in a promise chain to delay the execution. This isn't just presentation logic, so please include tests. Actually, it might be easier to start with the tests 😊. [**Working with functions**]
 ```javascript
 searchSpaces("")
