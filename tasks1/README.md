@@ -30,6 +30,10 @@ searchSpaces("")
 5. If possible we all try to write reusable code. I hope you had that in mind working on task 2 and task 4. Please add a similar search component to the one created in task 2 and 4, that works with API provided in *src/searchAddress.ts*. Please reuse as code as you would do working on real life task. Maybe your code requires a slight refactor to complete this task? [**Architecture**]
 6. Create a simple panel using [Material UI](https://material-ui.com/). The most important for us is styling and how do you manage with styled components. See what kind of styling options [Material UI Styles](https://material-ui.com/styles/basics/) proposes to you. Please don't use ThemeProvider, each component should be customized separately. [**React / Working with Material UI**]
 
+    * Stage 1 - Add styles to the panel component.
+    * Stage 2 - Add styles to the buttons. They should have no ripples on click or touch events.
+    * Stage 3 - Add styles to the inputs.
+
 *Hint: Use Accordion component from Material UI, it has a nice transition animation between collapsing*
 
 ![alt text](https://github.com/Deskbooking-app/challenge/raw/master/panel-close.png)
