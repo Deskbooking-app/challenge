@@ -1,0 +1,36 @@
+{
+  "driver-page": {
+    "title": "Driver Page",
+    "description": "Welcome to the driver page.",
+    "features": {
+      "feature1": {
+        "title": "Real-time tracking",
+        "description": "Track your vehicle in real-time and get accurate location updates."
+      }
+    }
+  },
+  "passenger-page": {
+    "title": "Passenger Page",
+    "description": "Welcome to the passenger page.",
+    "features": {
+      "feature1": {
+        "title": "Fast and convenient rides",
+        "description": "Get to your destination quickly and easily with our reliable drivers."
+      },
+      "feature2": {
+        "title": "Safe and secure rides",
+        "description": "Ride with confidence knowing our drivers undergo extensive safety checks."
+      }
+    }
+  },
+  "admin-page": {
+    "title": "Admin Page",
+    "description": "Welcome to the admin page.",
+    "features": {
+      "feature2": {
+        "title": "Analytics and reporting",
+        "description": "Get insights into your platform's performance with our powerful analytics tools."
+      }
+    }
+  }
+}

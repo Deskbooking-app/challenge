@@ -1,0 +1,21 @@
+{
+  "driver-page": {
+    "title": "Página del conductor",
+    "features": {
+      "feature2": {
+        "title": "Evaluaciones de conductores",
+        "description": "Reciba calificaciones de los pasajeros y mejore su calificación general."
+      }
+    }
+  },
+  "passenger-page": {
+    "title": "Página del pasajero",
+    "description": "Bienvenido a la página del pasajero.",
+    "features": {
+      "feature1": {
+        "title": "Viajes rápidos y convenientes",
+        "description": "Llegue a su destino de manera rápida y fácil con nuestros conductores confiables."
+      }
+    }
+  }
+}

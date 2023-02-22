@@ -1,0 +1,34 @@
+{
+  "driver-page": {
+    "title": "Page du conducteur",
+    "features": {
+      "feature1": {
+        "title": "Suivi en temps réel",
+        "description": "Suivez votre véhicule en temps réel et obtenez des mises à jour de localisation précises."
+      }
+    }
+  },
+  "passenger-page": {
+    "title": "Page du passager",
+    "description": "Bienvenue sur la page du passager.",
+    "features": {
+      "feature1": {
+        "title": "Courses rapides et pratiques",
+        "description": "Arrivez à votre destination rapidement et facilement avec nos conducteurs fiables."
+      },
+      "feature2": {
+        "title": "Courses sûres et sécurisées",
+        "description": "Voyagez en toute confiance en sachant que nos conducteurs sont soumis à des contrôles de sécurité approfondis."
+      }
+    }
+  },
+  "admin-page": {
+    "description": "Bienvenue sur la page administrateur.",
+    "features": {
+      "feature1": {
+        "title": "Gestion des utilisateurs",
+        "description": "Gérez les comptes d'utilisateurs et les niveaux d'accès facilement."
+      }
+    }
+  }
+}
